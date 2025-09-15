@@ -40,7 +40,7 @@ func main() {
 	http.HandleFunc("/todos/update", HandleUpdateTodo) 
 	http.HandleFunc("/todos/delete", HandleDeleteTodo) 
 
-	logger.Println("API rodando em :8080")
+	logger.Println("API rodando em :8000")
 	http.ListenAndServe(":8000", nil)
 }
 
