@@ -4,7 +4,7 @@
 | Método | Endpoint       | Descrição                     | Request Body                              | Response                       |
 |--------|----------------|-------------------------------|-------------------------------------------|--------------------------------|
 | GET    | `/todos`       | Lista todas as tarefas        | –                                         | Array de tarefas JSON          |
-| GET    | `/todos/{id}`  | Retorna tarefa específica     | –                                         | Objeto JSON da tarefa          |
-| POST   | `/todos`       | Cria uma nova tarefa          | `{ "name": "string", "done": bool }`   | Objeto JSON da tarefa criada   |
-| PUT    | `/todos/{id}`  | Atualiza uma tarefa existente | `{ "name": "string", "done": bool }` | Objeto JSON da tarefa atualizada |
-| DELETE | `/todos/{id}`  | Remove uma tarefa             | –                                         | Array de tarefas JSON atualizado         |
+| GET    | `/todo/{id}`  | Retorna tarefa específica     | –                                         | Objeto JSON da tarefa          |
+| POST   | `/todos/create`       | Cria uma nova tarefa          | `{ "name": "string", "done": bool }`   | Objeto JSON da tarefa criada   |
+| PUT    | `/todos/update`  | Atualiza uma tarefa existente | `{ "name": "string", "done": bool }` | Objeto JSON da tarefa atualizada |
+| DELETE | `/todos/delete`  | Remove uma tarefa             | –                                         | Array de tarefas JSON atualizado         |
